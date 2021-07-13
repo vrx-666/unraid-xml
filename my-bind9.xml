@@ -61,7 +61,7 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Bind Config" Target="/etc/bind" Default="/mnt/user/appdata/bind9" Mode="rw" Description="Where Your DNS Server should store persistant configs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bind</Config>
+  <Config Name="Bind Config" Target="/etc/bind" Default="/mnt/user/appdata/bind9" Mode="rw" Description="Where Your DNS Server should store persistant configs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bind9</Config>
   <Config Name="DNS TCP Port" Target="" Default="53" Mode="tcp" Description="DNS Listening TCP Port, this is used for dns queries" Type="Port" Display="always" Required="true" Mask="false">53</Config>
   <Config Name="DNS UDP Port" Target="" Default="53" Mode="udp" Description="DNS Listening UDP Port, this is used for dns queries" Type="Port" Display="always" Required="true" Mask="false">53</Config>
   <Config Name="WebUI Port" Target="" Default="10000" Mode="tcp" Description="WebUI port, for graphical management" Type="Port" Display="always" Required="true" Mask="false">10000</Config>
