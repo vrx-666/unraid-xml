@@ -13,7 +13,7 @@
   <Category>Network:DNS Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:10000]/</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/vrx-666/unraid-xml/blob/master/bind.png</Icon>
+  <Icon>https://vrx.pl/bind.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
