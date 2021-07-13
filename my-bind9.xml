@@ -8,19 +8,25 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://github.com/vrx-666/bind9</Project>
-  <Overview>Bind9 with Webmin WebUI. Simple DNS for local network. Username and password could by changed by GUI_USER and GUI_PASSWORD ENV variables.</Overview>
+  <Project>https://www.isc.org/bind/</Project>
+  <Overview>Bind9 with Webmin WebUI. Simple lightweight DNS for local network.</Overview>
   <Category>Network:DNS Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:10000]/</WebUI>
   <TemplateURL/>
-  <Icon>https://vrx.pl/bind.png</Icon>
+  <Icon>https://github.com/vrx-666/unraid-xml/blob/master/bind.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1626117748</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>Bind9 with Webmin WebUI. Simple DNS for local network. Username and password could by changed by GUI_USER and GUI_PASSWORD ENV variables.</Description>
+  <Description>
+	<![CDATA[
+	  Bind9 with Webmin WebUI. Simple DNS for local network.<br />
+	  Username and password could by changed by GUI_USER and GUI_PASSWORD ENV variables.<br />
+	  You simply can change GUI port, by modyfing WebUI Host Port.<br />
+        ]]>
+  	  </Description>
   <Networking>
     <Mode>br0</Mode>
     <Publish>
