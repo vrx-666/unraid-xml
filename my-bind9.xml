@@ -7,7 +7,7 @@
   <MyIP></MyIP>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/111373-support-bind9/</Support>
   <Project>https://www.isc.org/bind/</Project>
   <Overview>Bind9 with Webmin WebUI. Simple lightweight DNS for local network.</Overview>
   <Category>Network:DNS Status:Beta</Category>
