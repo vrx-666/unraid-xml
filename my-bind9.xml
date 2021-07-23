@@ -3,14 +3,14 @@
   <Name>Bind9</Name>
   <Repository>pwa666/bind9:latest</Repository>
   <Registry>https://hub.docker.com/repository/docker/pwa666/bind9</Registry>
-  <Network>br0</Network>
-  <MyIP></MyIP>
+  <Network>bridge</Network>
+  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/111373-support-bind9/</Support>
   <Project>https://www.isc.org/bind/</Project>
-  <Overview>Bind9 with Webmin WebUI. Simple lightweight DNS for local network.</Overview>
-  <Category>Network:DNS Status:Beta</Category>
+  <Overview>Bind9 nameserver with Webmin WebUI. Simple lightweight DNS for local network. Default WebUI username is: admin and password: dificult You can change it by docker variables.</Overview>
+  <Category>Network:DNS Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:10000]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/bind.png</Icon>
@@ -28,7 +28,7 @@
         ]]>
   	  </Description>
   <Networking>
-    <Mode>br0</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>53</HostPort>
