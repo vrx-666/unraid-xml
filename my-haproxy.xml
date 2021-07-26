@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>haproxy</Name>
+  <Repository>haproxy</Repository>
+  <Registry>https://hub.docker.com/_/haproxy/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://www.haproxy.org/</Project>
+  <Overview>HAProxy - The Reliable, High Performance TCP/HTTP Load Balancer. Without configuration file Haproxy cannot be started. Check support thread for help. </Overview>
+  <Category>Network:Proxy Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/haproxy.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>HAProxy - The Reliable, High Performance TCP/HTTP Load Balancer. Without configuration file Haproxy cannot be started. Check support thread for help. </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/haproxy</HostDir>
+      <ContainerDir>/usr/local/etc/haproxy</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="http" Target="80" Default="80" Mode="tcp" Description="Kontener Port: 80" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="https" Target="443" Default="443" Mode="tcp" Description="Kontener Port: 443" Type="Port" Display="always" Required="false" Mask="false">443</Config>
+  <Config Name="config" Target="/usr/local/etc/haproxy" Default="" Mode="ro" Description="Kontener Path: /usr/local/etc/haproxy" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/haproxy</Config>
+</Container>
