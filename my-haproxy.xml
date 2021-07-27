@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support></Support>
+  <Support>https://forums.unraid.net/topic/111845-support-haproxy/</Support>
   <Project>https://www.haproxy.org/</Project>
   <Overview>HAProxy - The Reliable, High Performance TCP/HTTP Load Balancer. Without configuration file Haproxy cannot be started. Check support thread for help. </Overview>
   <Category>Network:Proxy Status:Stable</Category>
