@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>zabbix-agent</Name>
+  <Name>zabbix-agent2</Name>
   <Repository>zabbix/zabbix-agent2:latest</Repository>
   <Registry>https://hub.docker.com/r/zabbix/zabbix-agent</Registry>
   <Network>host</Network>
