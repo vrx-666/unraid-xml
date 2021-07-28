@@ -17,7 +17,13 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1626117748</DateInstalled>
+  <Date>2021-07-27</Date>
+  <Changes># 2021-07-27 #
+	  *	Fixed cleaning after pkgs installations
+	  # 2021-07-23 #
+  *	Fixed RNDC scripts
+  # 2021-07-12 #
+  *	First release</Changes>
   <DonateText/>
   <DonateLink/>
   <Description>

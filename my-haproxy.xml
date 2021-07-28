@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled/>
+  <Date>2021-07-27</Date>
   <DonateText/>
   <DonateLink/>
   <Description>HAProxy - The Reliable, High Performance TCP/HTTP Load Balancer. Without configuration file Haproxy cannot be started. Check support thread for help. </Description>
