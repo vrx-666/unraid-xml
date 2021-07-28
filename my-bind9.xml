@@ -13,7 +13,7 @@
   <Category>Network:DNS Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:10000]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/bind.png</Icon>
+  <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/img/bind.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
