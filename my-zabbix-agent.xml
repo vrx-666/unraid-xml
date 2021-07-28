@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>zabbix-agent</Name>
+  <Repository>zabbix/zabbix-agent:latest</Repository>
+  <Registry>https://hub.docker.com/r/zabbix/zabbix-agent</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>This container is just official Zabbix Agent image. Any Zabbix Server configuration/setup will need to be completed by yourself.   
+To set this container up just edit the following:   
+*	"HOSTNAME" to your unraid server hostname   
+*	"ZABBIX SERVER/PROXY IP" to the IP address of your Zabbix Server or Proxy   
+   
+If you would like Zabbix to monitor disks as well as system resources you will need to add each one as a path manually.   
+Please view the guide available on the forums.   </Overview>
+  <Category>Network:Management</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/img/zabbix.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <Date>2021-07-28</Date>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This container is just official Zabbix Agent image. Any Zabbix Server configuration/setup will need to be completed by yourself.   
+To set this container up just edit the following:   
+*	"HOSTNAME" to your unraid server hostname   
+*	"ZABBIX SERVER/PROXY IP" to the IP address of your Zabbix Server or Proxy   
+   
+If you would like Zabbix to monitor disks as well as system resources you will need to add each one as a path manually.   
+Please view the guide available on the forums.   </Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache</HostDir>
+      <ContainerDir>/mnt/cache</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/mnt/array</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+	<Value/>
+      <Name>ZBX_HOSTNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+	<Value/>
+      <Name>ZBX_SERVER_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+	<Value/>
+      <Name>ZBX_TLSCONNECT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>unencrypted</Value>
+      <Name>ZBX_TLSACCEPT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="ZBX_HOSTNAME" Target="ZBX_HOSTNAME" Default="" Mode="" Description="Container Variable: ZBX_HOSTNAME" Type="Variable" Display="always" Required="false" Mask="false">ZABBIX_SERVER_HOSTNAME</Config>
+  <Config Name="ZBX_SERVER_HOST" Target="ZBX_SERVER_HOST" Default="" Mode="" Description="Container Variable: ZBX_SERVER_HOST" Type="Variable" Display="always" Required="false" Mask="false">ZABBIX_SERVER_IP</Config>
+  <Config Name="ZBX_TLSCONNECT" Target="ZBX_TLSCONNECT" Default="" Mode="" Description="Container Variable: ZBX_TLSCONNECT" Type="Variable" Display="always" Required="false" Mask="false">unencrypted</Config>
+  <Config Name="ZBX_TLSACCEPT" Target="ZBX_TLSACCEPT" Default="" Mode="" Description="Container Variable: ZBX_TLSACCEPT" Type="Variable" Display="always" Required="false" Mask="false">unencrypted</Config>
+  <Config Name="cache disks" Target="/mnt/cache" Default="" Mode="ro" Description="Container Path: /mnt/cache" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache</Config>
+  <Config Name="array disk" Target="/mnt/array" Default="" Mode="ro" Description="Container Path: /mnt/array" Type="Path" Display="always" Required="false" Mask="false">/mnt/user</Config>
+</Container>
