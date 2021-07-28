@@ -3,6 +3,14 @@
   <Name>zabbix-agent2</Name>
   <Repository>zabbix/zabbix-agent2:latest</Repository>
   <Registry>https://hub.docker.com/r/zabbix/zabbix-agent</Registry>
+  <Branch>
+	<Tag>5.0-alpine-latest</Tag>
+	<TagDescription>version 5.0</TagDescription>
+  </Branch>
+  <Branch>
+	  <Tag>alpine-4.4-latest</Tag>
+	<TagDescription>version 4.4</TagDescription>
+  </Branch>
   <Network>host</Network>
   <MyIP/>
   <Shell>bash</Shell>
