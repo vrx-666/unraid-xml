@@ -17,8 +17,11 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Date>2021-07-27</Date>
+  <Date>2021-08-28</Date>
   <Changes>
+# 2021-08-02 #
+*	Fixed bugs in environment variables
+*	Simplest template
 # 2021-07-27 #   
 *	Fixed cleaning after pkgs installations   
 # 2021-07-23 #   
@@ -47,6 +50,11 @@
         <ContainerPort>53</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
+      <Port>
+        <HostPort>10000</HostPort>
+        <ContainerPort>10000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Data>
@@ -68,4 +76,5 @@
   <Config Name="DNS TCP Port" Target="" Default="53" Mode="tcp" Description="DNS Listening TCP Port, this is used for dns queries" Type="Port" Display="always" Required="true" Mask="false">53</Config>
   <Config Name="DNS UDP Port" Target="" Default="53" Mode="udp" Description="DNS Listening UDP Port, this is used for dns queries" Type="Port" Display="always" Required="true" Mask="false">53</Config>
   <Config Name="Password" Target="GUI_PASSWORD" Default="difficult" Mode="" Description="This is WebUI password for user admin.&#13;&#10;Default: difficult" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
+  <Config Name="WebUI Port" Target="" Default="10000" Mode="tcp" Description="This is WEBUI Port used for graphical management if You change it, You must change WebUI url in Advanced View" Type="Port" Display="always" Required="false" Mask="false">10000</Config>
 </Container>
