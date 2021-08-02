@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/111373-support-bind9/</Support>
   <Project>https://www.isc.org/bind/</Project>
-  <Overview>Bind9 nameserver with Webmin WebUI. Simple lightweight DNS for local network. Default WebUI username is: admin and password: difficult You can change it by docker variables.</Overview>
+  <Overview>Bind9 nameserver with Webmin WebUI. Simple lightweight DNS for local network. Default WebUI username is: admin and password: difficult You can change password by docker variables.</Overview>
   <Category>Network:DNS Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:10000]/</WebUI>
   <TemplateURL/>
@@ -31,8 +31,7 @@
   <Description>
 	<![CDATA[
 	  Bind9 with Webmin WebUI. Simple DNS for local network.<br />
-	  Username and password could by changed by GUI_USER and GUI_PASSWORD ENV variables.<br />
-	  You simply can change GUI port, by modyfing WebUI Host Port.<br />
+	  Password could by changed by GUI_PASSWORD ENV variable.<br />
         ]]>
   	  </Description>
   <Networking>
@@ -48,26 +47,16 @@
         <ContainerPort>53</ContainerPort>
         <Protocol>udp</Protocol>
       </Port>
-      <Port>
-        <HostPort>10000</HostPort>
-        <ContainerPort>10000</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/bind9</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/etc/bind</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
-    <Variable>
-      <Value>admin</Value>
-      <Name>GUI_USER</Name>
-      <Mode/>
-    </Variable>
     <Variable>
       <Value>difficult</Value>
       <Name>GUI_PASSWORD</Name>
@@ -75,10 +64,8 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Bind Config" Target="/etc/bind" Default="/mnt/user/appdata/bind9" Mode="rw" Description="Where Your DNS Server should store persistant configs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bind9</Config>
+  <Config Name="Bind Config" Target="/etc/bind" Default="" Mode="rw" Description="Where Your DNS Server should store persistant configs" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="DNS TCP Port" Target="" Default="53" Mode="tcp" Description="DNS Listening TCP Port, this is used for dns queries" Type="Port" Display="always" Required="true" Mask="false">53</Config>
   <Config Name="DNS UDP Port" Target="" Default="53" Mode="udp" Description="DNS Listening UDP Port, this is used for dns queries" Type="Port" Display="always" Required="true" Mask="false">53</Config>
-  <Config Name="WebUI Port" Target="" Default="10000" Mode="tcp" Description="WebUI port, for graphical management" Type="Port" Display="always" Required="true" Mask="false">10000</Config>
-  <Config Name="Username" Target="GUI_USER" Default="admin" Mode="" Description="This is WebUI Username for managing DNS&#13;&#10;Default: admin" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
   <Config Name="Password" Target="GUI_PASSWORD" Default="difficult" Mode="" Description="This is WebUI password for managing DNS.&#13;&#10;Default: dificult" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
 </Container>
