@@ -21,6 +21,7 @@
   <Changes>
 # 2021-08-02 #
 *	Fixed bugs in environment variables
+*	Fixed bind starting script
 *	Simplest template
 # 2021-07-27 #   
 *	Fixed cleaning after pkgs installations   
