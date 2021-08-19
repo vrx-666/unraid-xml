@@ -3,7 +3,7 @@
   <Name>Bind9</Name>
   <Repository>pwa666/bind9:latest</Repository>
   <Registry>https://hub.docker.com/repository/docker/pwa666/bind9</Registry>
-  <Network>Host</Network>
+  <Network>host</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
