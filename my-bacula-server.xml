@@ -6,160 +6,86 @@
   <Branch>
 	<Tag>11-postgresql-latest</Tag>
 	<TagDescription>version 11.0.x</TagDescription>
-  	<Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
-	<Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
-	<Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
-	<Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
-	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
-	<Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
-	<Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data, but in sqlite edition this is the path where sqlite3 db will be stored" Type="path" Display="advanced" Required="true" Mask="false"></Config>
-	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Baculum config" Target="/etc/baculum" Default="/mnt/user/appdata/bacula-server/baculum" Mode="rw" Description="Path where WEB Interface configuration will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
   </Branch>
   <Branch>
 	<Tag>11-sqlite3-latest</Tag>
 	<TagDescription>version 11.0.x</TagDescription>
-  	<Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
-	<Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
-	<Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
-	<Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
-	<Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
-	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
-	<Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
-	<Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where where sqlite3 db will be stored" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Baculum config" Target="/etc/baculum" Default="/mnt/user/appdata/bacula-server/baculum" Mode="rw" Description="Path where WEB Interface configuration will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where sqlite3 db will be stored" Type="path" Display="always" Required="true" Mask="false"></Config>
   </Branch>
   <Branch>
 	  <Tag>9.6-pgsql-latest</Tag>
 	<TagDescription>version 9.6</TagDescription>
-  	<Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
-	<Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
-	<Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
-	<Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
-	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
-	<Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
-	<Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data, but in sqlite edition this is the path where sqlite3 db will be stored" Type="path" Display="advanced" Required="true" Mask="false"></Config>
-	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
+	<Config Name="Bacula log path" Target="/var/log/bacula" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
 	<Config Name="Baculum config" Target="/etc/baculum" Default="/mnt/user/appdata/bacula-server/baculum" Mode="rw" Description="Path where WEB Interface configuration will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
   </Branch>
   <Branch>
 	  <Tag>9.6-mysql-latest</Tag>
 	<TagDescription>version 9.6</TagDescription>
-  	<Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
-	<Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
-	<Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
-	<Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
-	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
-	<Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
-	<Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data, but in sqlite edition this is the path where sqlite3 db will be stored" Type="path" Display="advanced" Required="true" Mask="false"></Config>
-	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
+	<Config Name="Bacula log path" Target="/var/log/bacula" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
 	<Config Name="Baculum config" Target="/etc/baculum" Default="/mnt/user/appdata/bacula-server/baculum" Mode="rw" Description="Path where WEB Interface configuration will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
   </Branch>
   <Branch>
 	  <Tag>9.6-sqlite3-latest</Tag>
 	<TagDescription>version 9.6</TagDescription>
-  	<Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
-	<Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
-	<Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
-	<Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
-	<Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
-	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
-	<Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
-	<Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where sqlite3 db will be stored" Type="path" Display="always" Required="true" Mask="false"></Config>
+  	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where where sqlite3 db will be stored" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
+	<Config Name="Bacula log path" Target="/var/log/bacula" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
 	<Config Name="Baculum config" Target="/etc/baculum" Default="/mnt/user/appdata/bacula-server/baculum" Mode="rw" Description="Path where WEB Interface configuration will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
   </Branch>
   <Branch>
 	<Tag>9.4-pgsql-latest</Tag>
 	<TagDescription>version 9.4</TagDescription>
-  	<Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
-	<Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
-	<Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
-	<Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
-	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
-	<Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
-	<Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
+  	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data, but in sqlite edition this is the path where sqlite3 db will be stored" Type="path" Display="advanced" Required="true" Mask="false"></Config>
-	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
+	<Config Name="Bacula log path" Target="/var/log/bacula" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
 	<Config Name="Baculum config" Target="/etc/baculum" Default="/mnt/user/appdata/bacula-server/baculum" Mode="rw" Description="Path where WEB Interface configuration will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
   </Branch>
   <Branch>
 	<Tag>9.4-mysql-latest</Tag>
 	<TagDescription>version 9.4</TagDescription>
-  	<Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
-	<Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
-	<Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
-	<Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
-	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
-	<Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
-	<Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
+  	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data, but in sqlite edition this is the path where sqlite3 db will be stored" Type="path" Display="advanced" Required="true" Mask="false"></Config>
-	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
+	<Config Name="Bacula log path" Target="/var/log/bacula" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
 	<Config Name="Baculum config" Target="/etc/baculum" Default="/mnt/user/appdata/bacula-server/baculum" Mode="rw" Description="Path where WEB Interface configuration will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
   </Branch>
   <Branch>
 	<Tag>9.4-sqlite3-latest</Tag>
 	<TagDescription>version 9.4</TagDescription>
-  	<Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
-	<Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
-	<Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
-	<Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
-	<Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
-	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
-	<Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
-	<Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where sqlite3 db will be stored" Type="path" Display="always" Required="true" Mask="false"></Config>
+  	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where where sqlite3 db will be stored" Type="path" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
+	<Config Name="Bacula log path" Target="/var/log/bacula" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
 	<Config Name="Baculum config" Target="/etc/baculum" Default="/mnt/user/appdata/bacula-server/baculum" Mode="rw" Description="Path where WEB Interface configuration will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
   </Branch>
   <Network>bridge</Network>
@@ -192,17 +118,13 @@
   <Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
   <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
-  <Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
   <Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
   <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
   <Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
   <Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
-  <Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data, but in sqlite edition this is the path where sqlite3 db will be stored" Type="path" Display="advanced" Required="true" Mask="false"></Config>
-  <Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Apache log path" Target="/var/log/apache2" Default="/mnt/user/appdata/bacula-server/log/apache2" Mode="rw" Description="Path where webserver logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Baculum config" Target="/etc/baculum" Default="/mnt/user/appdata/bacula-server/baculum" Mode="rw" Description="Path where WEB Interface configuration will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
 </Container>
