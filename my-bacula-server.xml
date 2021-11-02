@@ -6,7 +6,7 @@
   <Branch>
 	<Tag>11-postgresql-latest</Tag>
 	<TagDescription>version 11.0.x</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="PostgreSQL Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
@@ -19,7 +19,7 @@
   <Branch>
 	  <Tag>9.6-pgsql-latest</Tag>
 	<TagDescription>version 9.6</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="PostgreSQL Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
@@ -32,7 +32,7 @@
   <Branch>
 	  <Tag>9.6-mysql-latest</Tag>
 	<TagDescription>version 9.6</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="MySQL Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
@@ -55,7 +55,7 @@
   <Branch>
 	<Tag>9.4-pgsql-latest</Tag>
 	<TagDescription>version 9.4</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="PostgreSQL Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
@@ -68,7 +68,7 @@
   <Branch>
 	<Tag>9.4-mysql-latest</Tag>
 	<TagDescription>version 9.4</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="MySQL Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
