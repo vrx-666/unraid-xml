@@ -6,9 +6,9 @@
   <Branch>
 	<Tag>11-postgresql-latest</Tag>
 	<TagDescription>version 11.0.x</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
   </Branch>
   <Branch>
@@ -19,9 +19,9 @@
   <Branch>
 	  <Tag>9.6-pgsql-latest</Tag>
 	<TagDescription>version 9.6</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
@@ -32,9 +32,9 @@
   <Branch>
 	  <Tag>9.6-mysql-latest</Tag>
 	<TagDescription>version 9.6</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
@@ -55,9 +55,9 @@
   <Branch>
 	<Tag>9.4-pgsql-latest</Tag>
 	<TagDescription>version 9.4</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
   	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
@@ -68,9 +68,9 @@
   <Branch>
 	<Tag>9.4-mysql-latest</Tag>
 	<TagDescription>version 9.4</TagDescription>
-	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="IP Address of Your Database Server" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="DB Access User" Type="variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="DB Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="Your's Database Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="path" Display="always" Required="true" Mask="false"></Config>
   	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
