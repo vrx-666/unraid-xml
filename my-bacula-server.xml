@@ -94,20 +94,20 @@
   <Support></Support>
   <Project/>
   <Overview>Bacula is a network Client/Server based backup program. Baculum is web environment to easy work with the Bacula programs. There is 3 major versions of bacula: 9.4, 9,6, 11, with multiple database engines supported.
-	  If You do not havy any mysql or postgresql server, You could chose sqlite3 versions, but this version is not recomended. Please read support thread before You start.
+	  If You do not havy any mysql or postgresql server, You could chose sqlite3 versions, but this version is not recomended. Please read support thread before You start: https://forums.unraid.net/topic/bacula-server
    </Overview>
   <Category>Network:Management</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/img/zabbix.jpg</Icon>
+  <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/img/bacula.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Date>2021-10-06</Date>
+  <Date>2021-11-02</Date>
   <DonateText/>
   <DonateLink/>
   <Description>Bacula is a network Client/Server based backup program. Baculum is web environment to easy work with the Bacula programs. There is 3 major versions of bacula: 9.4, 9,6, 11, with multiple database engines supported.
-	  If You do not havy any mysql or postgresql server, You could chose sqlite3 versions, but this version is not recomended. Please read support thread before You start.
+	  If You do not havy any mysql or postgresql server, You could chose sqlite3 versions, but this version is not recomended. Please read support thread before You start: https://forums.unraid.net/topic/bacula-server
  </Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -116,8 +116,8 @@
   <Labels/>
   <Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
   <Config Name="IPAddress for Storage Server" Target="SD_Host" Default="IP_Address" Mode="" Description="Storage Daemon Address, If You set bridge network, You should type in Unraid Host IP Address. This IP is sent to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Interface Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
-  <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB User Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
+  <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WEB Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WEB Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
   <Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="Bacula Director Port" Type="port" Display="always" Required="false" Mask="false">9101</Config>
   <Config Name="Bacula Storage Daemon Port" Target="9103" Default="9103" Mode="" Description="Bacula Storage Daemon Port" Type="port" Display="always" Required="true" Mask="false">9103</Config>
   <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
