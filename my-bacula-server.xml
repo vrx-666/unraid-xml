@@ -82,10 +82,8 @@
   <Config Name="IP Address" Target="SD_Host" Default="" Mode="" Description="If You set bridge network, You should type in Unraid Host IP Address. This IP is sending to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="variable" Display="always" Required="false" Mask="false">admin</Config>
   <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="variable" Display="always" Required="false" Mask="true">difficult</Config>
-  <Config Name="Bacula Director Port" Target="9101" Default="9101" Mode="" Description="This port could be used to remote management" Type="port" Display="always" Required="false" Mask="false">9101</Config>
   <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="" Description="Clients connects to sending backups" Type="port" Display="always" Required="true" Mask="false">9103</Config>
   <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="port" Display="always" Required="true" Mask="false">9095</Config>
-  <Config Name="Bacula API Port" Target="9096" Default="9096" Mode="" Description="Bacula API Port" Type="port" Display="always" Required="true" Mask="false">9096</Config>
   <Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration path" Type="path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="path" Display="always" Required="false" Mask="false"></Config>
