@@ -60,7 +60,7 @@
   <Overview>Bacula is a network Client/Server based backup program. This app contains also Baculum, web environment to easy manage with the Bacula programs. Here is 2 major versions of bacula: 9.6, 11, with multiple database engines supported.
 	  If You do not havy any mysql or postgresql server, You could chose sqlite3 versions, but this version is not recomended. Please check ReadMe before You start. Default Tag is 11 sqlite3 version.
    </Overview>
-  <Category>Backup:Beta</Category>
+  <Category>Backup Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:9095]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/img/bacula.png</Icon>
