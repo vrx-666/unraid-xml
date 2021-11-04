@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/pwa666/bacula-server</Registry>
   <Branch>
 	<Tag>11-postgresql-latest</Tag>
-	<TagDescription>version 11.0.x</TagDescription>
+	<TagDescription>version 11 with postgreSQL connector</TagDescription>
 	<Requires>PostgreSQL</Requires>
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="PostgreSQL Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
@@ -14,7 +14,7 @@
   </Branch>
   <Branch>
 	  <Tag>9.6-pgsql-latest</Tag>
-	<TagDescription>version 9.6</TagDescription>
+	<TagDescription>version 9.6 with postgreSQL connector</TagDescription>
 	<Requires>PostgreSQL</Requires>
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="PostgreSQL Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
@@ -28,7 +28,7 @@
   </Branch>
   <Branch>
 	  <Tag>9.6-mysql-latest</Tag>
-	<TagDescription>version 9.6</TagDescription>
+	<TagDescription>version 9.6with mySQL connector</TagDescription>
 	<Requires>mySQL</Requires>
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="MySQL Server IP" Type="variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="variable" Display="always" Required="true" Mask="false"></Config>
@@ -42,7 +42,7 @@
   </Branch>
   <Branch>
 	  <Tag>9.6-sqlite3-latest</Tag>
-	<TagDescription>version 9.6</TagDescription>
+	<TagDescription>version 9.6 with sqlite3</TagDescription>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where sqlite3 db will be stored" Type="path" Display="always" Required="true" Mask="false"></Config>
   	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="path" Display="always" Required="true" Mask="false"></Config>
