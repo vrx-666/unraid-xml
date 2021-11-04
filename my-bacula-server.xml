@@ -52,6 +52,7 @@
   </Branch>
   <Network>bridge</Network>
   <MyIP/>
+  <MinVer>6.8</MinVer>
   <Shell>bash</Shell>
   <Support>https://forums.unraid.net/topic/115560-support-bacula-server/</Support>
   <ReadMe>https://forums.unraid.net/topic/115560-support-bacula-server/</ReadMe>
