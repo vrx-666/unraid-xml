@@ -17,8 +17,10 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Date>2021-08-03</Date>
+  <Date>2021-12-13</Date>
   <Changes>
+# 2021-12-13 #
+*	Added IPV6 switch
 # 2021-08-02 #
 *	Fixed bugs in environment variables
 *	Fixed bind starting script
@@ -71,6 +73,11 @@
       <Name>GUI_PASSWORD</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>disable</Value>
+      <Name>IPV6</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="Bind Config" Target="/etc/bind" Default="" Mode="rw" Description="Where Your DNS Server should store persistant configs" Type="Path" Display="always" Required="true" Mask="false"></Config>
@@ -78,4 +85,5 @@
   <Config Name="DNS UDP Port" Target="53" Default="53" Mode="udp" Description="DNS Listening UDP Port, this is used for dns queries" Type="Port" Display="always" Required="true" Mask="false">53</Config>
   <Config Name="Password" Target="GUI_PASSWORD" Default="difficult" Mode="" Description="This is WebUI password for user admin.&#13;&#10;Default: difficult" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
   <Config Name="WebUI Port" Target="10000" Default="10000" Mode="tcp" Description="This is WEBUI Port used for graphical management" Type="Port" Display="always" Required="false" Mask="false">10000</Config>
+  <Config Name="IPv6" Target="IPV6" Default="disable" Mode="" Description="Enable/Disable IPv6" Type="Variable" Display="always" Required="false" Mask="true">disable</Config>
 </Container>
