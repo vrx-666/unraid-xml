@@ -96,7 +96,14 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Date>2021-11-02</Date>
+  <Date>2022-01-14</Date>
+   <Changes>
+# 2022-01-14 #
+*       Updated base image to bullseye (Bacula 11)
+*       Used slim base images (bullseye-slim)
+# 2021-11-02 #
+*       First release
+  </Changes>
   <DonateText/>
   <DonateLink/>
   <Description>Bacula is a network Client/Server based backup program. Baculum is web environment to easy work with the Bacula programs. Here is 2 major versions of bacula: 9.6, 11, with multiple database engines supported.
