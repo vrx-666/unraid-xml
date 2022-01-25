@@ -98,11 +98,13 @@
   <CPUset/>
   <Date>2022-01-14</Date>
    <Changes>
+# 2022-01-25 #
+*	 Come back to standard base images (ugly signs in GUI on slim images)
 # 2022-01-14 #
-*       Updated base image to bullseye (Bacula 11)
-*       Used slim base images (bullseye-slim)
+*	 Updated base image to bullseye (Bacula 11)
+*	 Used slim base images (bullseye-slim)
 # 2021-11-02 #
-*       First release
+*	 First release
   </Changes>
   <DonateText/>
   <DonateLink/>
