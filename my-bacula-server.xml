@@ -12,7 +12,7 @@
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="PostgreSQL Server IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
         <Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="Variable" Display="always" Required="true" Mask="false"></Config>
         <Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-        <Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
+        <Config Name="Bacula storage path" Target="/mnt/bacula" Default="" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
         <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
         <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
         <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
@@ -32,7 +32,7 @@
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="PostgreSQL Server IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="Variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
         <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
         <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
         <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
@@ -52,7 +52,7 @@
 	<Config Name="Database IP Address" Target="DB_Host" Default="" Mode="" Description="MySQL Server IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User" Target="DB_User" Default="" Mode="" Description="Database Username" Type="Variable" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Database User's Password" Target="DB_Password" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
         <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
         <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
@@ -68,7 +68,7 @@
 	<TagDescription>version 9.6 with sqlite3</TagDescription>
 	<Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
         <Config Name="IP Address" Target="SD_Host" Default="" Mode="" Description="If You set bridge network, You should type in Unraid Host IP Address. This IP is sending to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
+	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
         <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
         <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
         <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
@@ -120,7 +120,7 @@
   <Labels/>
   <Config Name="TimeZone" Target="TZ" Default="Europe/Warsaw" Mode="" Description="Set Your Timezone" Type="Variable" Display="always" Required="false" Mask="false">Europe/Warsaw</Config>
   <Config Name="IP Address" Target="SD_Host" Default="" Mode="" Description="If You set bridge network, You should type in Unraid Host IP Address. This IP is sending to clients, which could connect to storage server using this IP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Bacula storage path" Target="/mnt/bacula" Default="" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
   <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
   <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
