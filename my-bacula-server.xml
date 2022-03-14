@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Bacula-Server</Name>
   <Repository>pwa666/bacula-server:11-sqlite3-latest</Repository>
-  <Registry>https://hub.docker.com/pwa666/bacula-server</Registry>
+  <Registry>https://hub.docker.com/r/pwa666/bacula-server</Registry>
   <Branch>
 	<Tag>11-postgresql-latest</Tag>
 	<TagDescription>version 11 with postgreSQL connector</TagDescription>
@@ -98,6 +98,8 @@
   <CPUset/>
   <Date>2022-01-14</Date>
    <Changes>
+# 2022-03-15 #
+*	 Improved signal handling
 # 2022-01-25 #
 *	 Come back to standard base images (ugly signs in GUI on slim images)
 # 2022-01-14 #

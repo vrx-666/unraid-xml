@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Bind9</Name>
   <Repository>pwa666/bind9:latest</Repository>
-  <Registry>https://hub.docker.com/repository/docker/pwa666/bind9</Registry>
+  <Registry>https://hub.docker.com/r/pwa666/bind9</Registry>
   <Network>host</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -19,6 +19,8 @@
   <CPUset/>
   <Date>2022-01-10</Date>
   <Changes>
+# 2022-03-15 #
+*	Improved signal handling
 # 2022-01-10 #
 *	Updated base image to 3.15
 *	Updated webmin version to 1.984 
