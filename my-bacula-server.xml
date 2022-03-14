@@ -15,8 +15,8 @@
         <Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
         <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
         <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
-        <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
-        <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
+        <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
+        <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="tcp" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
 	<Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="Path" Display="always" Required="true" Mask="false"></Config>
         <Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration path" Type="Path" Display="always" Required="true" Mask="false"></Config>
         <Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="Path" Display="always" Required="false" Mask="false"></Config>
@@ -35,8 +35,8 @@
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
         <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
         <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
-        <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
-        <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
+        <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
+        <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="tcp" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
   	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="Path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="Path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula log path" Target="/var/log/bacula" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="Path" Display="always" Required="false" Mask="false"></Config>
@@ -55,8 +55,8 @@
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
         <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
-        <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
-        <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
+        <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
+        <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="tcp" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
      	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where bacula could write some data" Type="Path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="Path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula log path" Target="/var/log/bacula" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="Path" Display="always" Required="false" Mask="false"></Config>
@@ -71,8 +71,8 @@
 	<Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
         <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
         <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
-        <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
-	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
+        <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
+	<Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="tcp" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
 	<Config Name="Bacula working directory" Target="/var/lib/bacula" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where sqlite3 db will be stored" Type="Path" Display="always" Required="true" Mask="false"></Config>
   	<Config Name="Bacula config path" Target="/etc/bacula" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration" Type="Path" Display="always" Required="true" Mask="false"></Config>
 	<Config Name="Bacula log path" Target="/var/log/bacula" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="Path" Display="always" Required="false" Mask="false"></Config>
@@ -121,8 +121,8 @@
   <Config Name="Bacula storage path" Target="/mnt/bacula" Default="/mnt/user/appdata/bacula-server/storage" Mode="rw" Description="Path where backups will be stored on Host disk" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="WEB Username" Target="WEB_User" Default="admin" Mode="" Description="WebUI Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
   <Config Name="WEB User Password" Target="WEB_Password" Default="difficult" Mode="" Description="WebUI Password" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
-  <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
-  <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
+  <Config Name="Bacula Storage Port" Target="9103" Default="9103" Mode="tcp" Description="Clients connects to sending backups" Type="Port" Display="always" Required="true" Mask="false">9103</Config>
+  <Config Name="Bacula WEB Port" Target="9095" Default="9095" Mode="tcp" Description="Bacula WEB Port" Type="Port" Display="always" Required="true" Mask="false">9095</Config>
   <Config Name="Bacula working directory" Target="/opt/bacula/working" Default="/mnt/user/appdata/bacula-server/working" Mode="rw" Description="Path where sqlite3 db will be stored" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Bacula config path" Target="/opt/bacula/etc" Default="/mnt/user/appdata/bacula-server/etc" Mode="rw" Description="Bacula Configuration path" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="Bacula log path" Target="/opt/bacula/log" Default="/mnt/user/appdata/bacula-server/log/bacula" Mode="rw" Description="Path where bacula's logs will be stored on Host disk" Type="Path" Display="always" Required="false" Mask="false"></Config>
