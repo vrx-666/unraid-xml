@@ -17,8 +17,10 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Date>2022-06-08</Date>
+  <Date>2022-06-24</Date>
   <Changes>
+# 2022-06-24 #
+*	Health check added
 # 2022-06-08 #
 *	UnraidOS 6.10 Fix
 # 2022-03-15 #
