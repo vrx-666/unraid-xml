@@ -40,8 +40,10 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Date>2022-07-09</Date>
+  <Date>2022-07-11</Date>
    <Changes>
+# 2022-07-11 #
+*	 Vol files permissions fix
 # 2022-07-09 #
 *	 Bacula 11.6, build from source
 # 2022-05-30 #
