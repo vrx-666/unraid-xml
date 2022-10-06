@@ -14,7 +14,7 @@
   <Network>host</Network>
   <MyIP/>
   <Shell>bash</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/111880-support-zabbix-agent/</Support>
   <Project/>
   <Overview>This container is just official Zabbix Agent image. Any Zabbix Server configuration/setup will need to be completed by yourself.   
