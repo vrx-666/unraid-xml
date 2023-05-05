@@ -17,8 +17,10 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Date>2022-06-24</Date>
+  <Date>2023-05-05</Date>
   <Changes>
+# 2023-05-05 #
+*	Added support for ipv6 and openssl (GUI)
 # 2022-06-24 #
 *	Health check added
 # 2022-06-08 #
