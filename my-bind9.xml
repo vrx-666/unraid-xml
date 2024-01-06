@@ -101,4 +101,5 @@
   <Config Name="Password" Target="GUI_PASSWORD" Default="difficult" Mode="" Description="This is WebUI password for user admin.&#13;&#10;Default: difficult" Type="Variable" Display="always" Required="false" Mask="true">difficult</Config>
   <Config Name="WebUI Port" Target="10000" Default="10000" Mode="tcp" Description="This is WEBUI Port used for graphical management" Type="Port" Display="always" Required="false" Mask="false">10000</Config>
   <Config Name="IPv6" Target="IPV6" Default="disable" Mode="" Description="Enable/Disable IPv6" Type="Variable" Display="always" Required="false" Mask="false">disable</Config>
+  <Config Name="Extended Logging" Target="EXTEND_LOGGING" Default="disable" Mode="" Description="Enable/Disable extended logging" Type="Variable" Display="always" Required="false" Mask="false">disable</Config>
 </Container>
