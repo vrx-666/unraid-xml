@@ -95,6 +95,8 @@
   <CPUset/>
   <Date>2023-01-02</Date>
   <Changes>
+# 2024-04-19 #
+*        Bacula v13: manual Catalog backup fix
 # 2024-04-18 #
 *        Bacula v15 available (postgresql13 or above required)
 # 2024-01-02 #
