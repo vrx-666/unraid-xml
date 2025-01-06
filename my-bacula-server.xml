@@ -95,6 +95,8 @@
   <CPUset/>
   <Date>2023-01-02</Date>
   <Changes>
+# 2025-01-06 #
+*        Bacula v15: Bacularis updated to v4.0
 # 2024-04-19 #
 *        Bacula v13: manual Catalog backup fix
 # 2024-04-18 #
