@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Plugin>True</Plugin>
+  <PluginURL>https://github.com/vrx-666/unraid-bacula-fd/releases/latest/download/bacula-fd.plg</PluginURL>
+  <PluginAuthor>VRX</PluginAuthor>
+  <Name>Bacula File Daemon</Name>
+  <Category>Backup:</Category>
+  <Description>
+Native Bacula 15 file daemon (bacula-fd) for Unraid. Lets your Bacula Director back up the server itself - the flash drive, VM definitions, appdata and shares - and restore files to their original locations, keeping ownership, permissions, ACLs and extended attributes.
+Requires a Bacula 15 Director and Storage Daemon, for example the Bacula-Server container.
+Settings: Settings > Network Services > Bacula File Daemon.
+  </Description>
+  <Requires>A Bacula 15 Director and Storage Daemon on your network</Requires>
+  <Support>https://forums.unraid.net/topic/200900-plugin-bacula-file-daemon-bacula-fd/</Support>
+  <Project>https://github.com/vrx-666/unraid-bacula-fd</Project>
+  <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/img/bacula.png</Icon>
+  <MinVer>7.0.0</MinVer>
+  <ExtraSearchTerms>backup restore bacula-fd client</ExtraSearchTerms>
+</Containers>
