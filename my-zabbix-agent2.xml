@@ -4,12 +4,12 @@
   <Repository>zabbix/zabbix-agent2:latest</Repository>
   <Registry>https://hub.docker.com/r/zabbix/zabbix-agent</Registry>
   <Branch>
-	<Tag>5.0-alpine-latest</Tag>
-	<TagDescription>version 5.0</TagDescription>
+    <Tag>alpine-7.0-latest</Tag>
+    <TagDescription>version 7.0 LTS</TagDescription>
   </Branch>
   <Branch>
-	  <Tag>alpine-4.4-latest</Tag>
-	<TagDescription>version 4.4</TagDescription>
+    <Tag>alpine-6.0-latest</Tag>
+    <TagDescription>version 6.0 LTS</TagDescription>
   </Branch>
   <Network>host</Network>
   <MyIP/>
@@ -31,7 +31,7 @@ Please view the guide available on the forums.   </Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Date>2021-08-12</Date>
+  <Date>2026-10-15</Date>
   <DonateText/>
   <DonateLink/>
   <Description>This container is just official Zabbix Agent image. Any Zabbix Server configuration/setup will need to be completed by yourself.   
