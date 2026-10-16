@@ -96,37 +96,37 @@
   <Date>2026-10-16</Date>
   <Changes>
 # 2026-10-16 #
-*        Bacula v15: PostgreSQL client v18 (fixes Catalog backup on PostgreSQL 17 and newer servers)
-*        Bacula v15: Bacularis v7.0, new Bacularis versions now arrive with regular image updates
+* Bacula v15: PostgreSQL client v18 (fixes Catalog backup on PostgreSQL 17 and newer servers)
+* Bacula v15: Bacularis v7.0, new Bacularis versions now arrive with regular image updates
 # 2025-01-06 #
-*        Bacula v15: Bacularis updated to v4.0
+* Bacula v15: Bacularis updated to v4.0
 # 2024-04-19 #
-*        Bacula v13: manual Catalog backup fix
+* Bacula v13: manual Catalog backup fix
 # 2024-04-18 #
-*        Bacula v15 available (postgresql13 or above required)
+* Bacula v15 available (postgresql13 or above required)
 # 2024-01-02 #
-*        Bacula v13 available (please read support thread if upgrading)
+* Bacula v13 available (please read support thread if upgrading)
 # 2023-03-28 #
-*	 vchanger added
+* vchanger added
 # 2022-10-06 #
-*	 Postgres Client v14 (only postgresql version)
+* Postgres Client v14 (only postgresql version)
 # 2022-09-15 #
-*	 Email notification support added (please read support thread)
+* Email notification support added (please read support thread)
 # 2022-07-11 #
-*	 Vol files permissions fix
+* Vol files permissions fix
 # 2022-07-09 #
-*	 Bacula 11.6, build from source
+* Bacula 11.6, build from source
 # 2022-05-30 #
-*	 End of development Bacula 9.6 images
+* End of development Bacula 9.6 images
 # 2022-03-15 #
-*	 Improved signal handling
+* Improved signal handling
 # 2022-01-25 #
-*	 Come back to standard base images (ugly signs in GUI on slim images)
+* Come back to standard base images (ugly signs in GUI on slim images)
 # 2022-01-14 #
-*	 Updated base image to bullseye (Bacula 11)
-*	 Used slim base images (bullseye-slim)
+* Updated base image to bullseye (Bacula 11)
+* Used slim base images (bullseye-slim)
 # 2021-11-02 #
-*	 First release
+* First release
   </Changes>
   <DonateText/>
   <DonateLink/>
