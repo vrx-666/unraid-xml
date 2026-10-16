@@ -20,35 +20,35 @@
   <Date>2025-05-02</Date>
   <Changes>
 # 2025-04-29 #
-*	Base system upgrade (v3.21)
-*	Webmin update (v2.303)
+* Base system upgrade (v3.21)
+* Webmin update (v2.303)
 # 2024-01-05 #
-*	Base system upgrade (v3.19)
-*	Webmin update (v1.994)
-*	Extended logging added
+* Base system upgrade (v3.19)
+* Webmin update (v1.994)
+* Extended logging added
 # 2023-05-05 #
-*	Added support for ipv6 and openssl (GUI)
+* Added support for ipv6 and openssl (GUI)
 # 2022-06-24 #
-*	Health check added
+* Health check added
 # 2022-06-08 #
-*	UnraidOS 6.10 Fix
+* UnraidOS 6.10 Fix
 # 2022-03-15 #
-*	Improved signal handling
+* Improved signal handling
 # 2022-01-10 #
-*	Updated base image to 3.15
-*	Updated webmin version to 1.984 
+* Updated base image to 3.15
+* Updated webmin version to 1.984 
 # 2021-12-13 #
-*	Added IPV6 switch
+* Added IPV6 switch
 # 2021-08-02 #
-*	Fixed bugs in environment variables
-*	Fixed bind starting script
-*	Simplest template
+* Fixed bugs in environment variables
+* Fixed bind starting script
+* Simplest template
 # 2021-07-27 #   
-*	Fixed cleaning after pkgs installations   
+* Fixed cleaning after pkgs installations   
 # 2021-07-23 #   
-*	Fixed RNDC scripts   
+* Fixed RNDC scripts   
 # 2021-07-12 #   
-*	First release   
+* First release   
   </Changes>
   <DonateText/>
   <DonateLink/>
