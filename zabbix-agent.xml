@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Plugin>True</Plugin>
+  <PluginURL>https://github.com/vrx-666/unraid-zabbix-agent/releases/latest/download/zabbix-agent.plg</PluginURL>
+  <PluginAuthor>VRX</PluginAuthor>
+  <Name>Zabbix Agent</Name>
+  <Category>Network:Management Tools:System</Category>
+  <Description>
+Native Zabbix 7.0 LTS agent (zabbix_agentd) for Unraid. Monitors the host directly - CPU, memory, disks, filesystems, network and the array state - without a container or bind mounts. Works with the standard "Linux by Zabbix agent" template plus Unraid keys (array state, disks, SMART health).
+The plugin downloads the official static agent from cdn.zabbix.com and verifies its SHA256. Only template keys are allowed; everything else is denied.
+Requires a Zabbix server 7.0 or newer.
+Settings: Settings > Network Services > Zabbix Agent.
+  </Description>
+  <Requires>A Zabbix server 7.0 or newer on your network</Requires>
+  <Support>https://forums.unraid.net/topic/200922-plugin-zabbix-agent/</Support>
+  <Project>https://github.com/vrx-666/unraid-zabbix-agent</Project>
+  <Icon>https://raw.githubusercontent.com/vrx-666/unraid-xml/master/img/zabbix.jpg</Icon>
+  <MinVer>7.0.0</MinVer>
+  <ExtraSearchTerms>monitoring zabbix-agent zabbix_agentd smart</ExtraSearchTerms>
+</Containers>
