@@ -8,6 +8,7 @@
   <Description>
 Native Zabbix 7.0 LTS agent (zabbix_agentd) for Unraid. Monitors the host directly - CPU, memory, disks, filesystems, network and the array state - without a container or bind mounts. Works with the standard "Linux by Zabbix agent" template plus Unraid keys (array state, disks, SMART health).
 The plugin downloads the official static agent from cdn.zabbix.com and verifies its SHA256. Only template keys are allowed; everything else is denied.
+The agent runs as root (SMART needs it) and listens on TCP 10050; only the hosts in Server= (default 127.0.0.1) can query it.
 Requires a Zabbix server 7.0 or newer.
 Settings: Settings > Network Services > Zabbix Agent.
   </Description>
